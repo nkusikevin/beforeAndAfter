@@ -1,0 +1,35 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background-color: #333;
+	color: white;
+}
+.box {
+	background-color: white;
+	width: 200px;
+	height: 200px;
+    cursor: pointer;
+    position: relative;
+}
+
+.box:hover{
+    animation-name: anime1;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+}
+
+@keyframes anime1 {
+    from{
+        top:0;
+    }
+	to {
+		width: 600px;
+        background-color: teal;
+        top:300px
+	}
+}

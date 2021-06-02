@@ -1,0 +1,20 @@
+body{
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.box{
+    background-color: teal;
+    width: 100px;
+    height: 100px;
+    transition: all 2s ease-in-out;
+}
+
+.box:hover{
+    background-color: skyblue;
+    border-radius: 5px;
+    width: 300px;
+    height: 300px;
+}

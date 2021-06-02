@@ -1,0 +1,40 @@
+body{
+    background-color: #333;
+}
+
+.box{
+    background-color: white;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    top: 0;
+    left: 0;
+    animation: anima1 3s forwards infinite ease-in-out;
+}
+
+@keyframes anima1{
+    25%{
+        top: 0;
+        left: 300px;
+        background-color: teal;
+        border-radius: 50% 0 0 0;
+    }
+    50%{
+        top:300px;
+        left: 300px;
+        background-color: skyblue;
+          border-radius: 50% 50% 0 0;
+    }
+    75%{
+        top:300px;
+        left: 0;
+        background-color: steelblue;
+          border-radius: 50% 50% 50% 0;
+    }
+    100%{
+        top:0;
+        left: 0;
+        background-color: white;
+          border-radius: 50% 50% 50% 50%;
+    }
+}
